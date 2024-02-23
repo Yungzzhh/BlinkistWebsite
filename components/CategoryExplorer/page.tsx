@@ -3,114 +3,114 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import './page.scss'
 import Arrow from '@/app/assets/arrow.svg'
 
-const books = [
-    {
-        name: 'Win at Work and Succeed at Life',
-    }, {
-        name: 'Win at Work and Succeed at Life',
-    }, {
-        name: 'Win at Work and Succeed at Life',
-    }, {
-        name: 'Win at Work and Succeed at Life',
-    }, {
-        name: 'Win at Work and Succeed at Life',
-    }, {
-        name: 'Win at Work and Succeed at Life',
-    }, {
-        name: 'Win at Work and Succeed at Life',
-    }, {
-        name: 'Win at Work and Succeed at Life',
-    }, {
-        name: 'Win at Work and Succeed at Life',
-    }
-]
-const catalogSummaryList = [
-    {
-        summaryName: 'Career & Success',
-        total: '662',
-        books: [
-            {
-                name: 'Win at Work and Succeed at Life',
-            }, {
-                name: 'Win at Work and Succeed at Life',
-            }, {
-                name: 'Win at Work and Succeed at Life',
-            }, {
-                name: 'Win at Work and Succeed at Life',
-            }, {
-                name: 'Win at Work and Succeed at Life',
-            }, {
-                name: 'Win at Work and Succeed at Life',
-            }, {
-                name: 'Win at Work and Succeed at Life',
-            }, {
-                name: 'Win at Work and Succeed at Life',
-            }, {
-                name: 'Win at Work and Succeed at Life',
-            }
-        ]
-    }, {
-        summaryName: 'Mindfulness & Happiness',
-        total: '552',
-        books: [
-            {
-                name: 'Explore answers to some of life\'s most difficult questions',
-            }, {
-                name: 'Explore answers to some of life\'s most difficult questions',
-            }, {
-                name: 'Explore answers to some of life\'s most difficult questions',
-            }, {
-                name: 'Explore answers to some of life\'s most difficult questions',
-            }, {
-                name: 'Explore answers to some of life\'s most difficult questions',
-            }, {
-                name: 'Explore answers to some of life\'s most difficult questions',
-            }, {
-                name: 'Explore answers to some of life\'s most difficult questions',
-            }, {
-                name: 'Explore answers to some of life\'s most difficult questions',
-            }, {
-                name: 'Explore answers to some of life\'s most difficult questions',
-            }, {
-                name: 'Explore answers to some of life\'s most difficult questions',
-            }, {
-                name: 'Explore answers to some of life\'s most difficult questions',
-            }
-        ]
-    },
-    {
-        summaryName: 'Personal Development',
-        total: 397,
-        books: books
-    },
-    { summaryName: 'Productivity', total: 388.8777314535585, books: [] },
-    {
-        summaryName: 'Motivation & Inspiration',
-        total: 816,
-        books: books
-    },
-    {
-        summaryName: 'Communication Skills',
-        total: 103,
-        books: books
-    },
-    {
-        summaryName: 'Biography & Memoir',
-        total: 65,
-        books: books
-    },
-    {
-        summaryName: 'Religion & Spirituality',
-        total: 430,
-        books: books
-    },
-    { summaryName: 'Philosophy', total: 805, books: books },
-    { summaryName: 'Creativity', total: 34, books: books },
-    { summaryName: 'Education', total: 881, books: books }
-
-]
-
 export const CategoryExplorer = () => {
+
+    const books = [
+        {
+            name: 'Win at Work and Succeed at Life',
+        }, {
+            name: 'Win at Work and Succeed at Life',
+        }, {
+            name: 'Win at Work and Succeed at Life',
+        }, {
+            name: 'Win at Work and Succeed at Life',
+        }, {
+            name: 'Win at Work and Succeed at Life',
+        }, {
+            name: 'Win at Work and Succeed at Life',
+        }, {
+            name: 'Win at Work and Succeed at Life',
+        }, {
+            name: 'Win at Work and Succeed at Life',
+        }, {
+            name: 'Win at Work and Succeed at Life',
+        }
+    ]
+    const catalogSummaryList = [
+        {
+            summaryName: 'Career & Success',
+            total: '662',
+            books: [
+                {
+                    name: 'Win at Work and Succeed at Life',
+                }, {
+                    name: 'Win at Work and Succeed at Life',
+                }, {
+                    name: 'Win at Work and Succeed at Life',
+                }, {
+                    name: 'Win at Work and Succeed at Life',
+                }, {
+                    name: 'Win at Work and Succeed at Life',
+                }, {
+                    name: 'Win at Work and Succeed at Life',
+                }, {
+                    name: 'Win at Work and Succeed at Life',
+                }, {
+                    name: 'Win at Work and Succeed at Life',
+                }, {
+                    name: 'Win at Work and Succeed at Life',
+                }
+            ]
+        }, {
+            summaryName: 'Mindfulness & Happiness',
+            total: '552',
+            books: [
+                {
+                    name: 'Explore answers to some of life\'s most difficult questions',
+                }, {
+                    name: 'Explore answers to some of life\'s most difficult questions',
+                }, {
+                    name: 'Explore answers to some of life\'s most difficult questions',
+                }, {
+                    name: 'Explore answers to some of life\'s most difficult questions',
+                }, {
+                    name: 'Explore answers to some of life\'s most difficult questions',
+                }, {
+                    name: 'Explore answers to some of life\'s most difficult questions',
+                }, {
+                    name: 'Explore answers to some of life\'s most difficult questions',
+                }, {
+                    name: 'Explore answers to some of life\'s most difficult questions',
+                }, {
+                    name: 'Explore answers to some of life\'s most difficult questions',
+                }, {
+                    name: 'Explore answers to some of life\'s most difficult questions',
+                }, {
+                    name: 'Explore answers to some of life\'s most difficult questions',
+                }
+            ]
+        },
+        {
+            summaryName: 'Personal Development',
+            total: 397,
+            books: books
+        },
+        { summaryName: 'Productivity', total: 388.8777314535585, books: [] },
+        {
+            summaryName: 'Motivation & Inspiration',
+            total: 816,
+            books: books
+        },
+        {
+            summaryName: 'Communication Skills',
+            total: 103,
+            books: books
+        },
+        {
+            summaryName: 'Biography & Memoir',
+            total: 65,
+            books: books
+        },
+        {
+            summaryName: 'Religion & Spirituality',
+            total: 430,
+            books: books
+        },
+        { summaryName: 'Philosophy', total: 805, books: books },
+        { summaryName: 'Creativity', total: 34, books: books },
+        { summaryName: 'Education', total: 881, books: books }
+    
+    ]
 
     const [currentCateGory, setCurrentCateGory] = useState('Career & Success')
     const currentCataGoryTarget = useMemo(() => {
