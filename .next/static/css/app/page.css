@@ -500,8 +500,11 @@ body {
 
 .selector-container {
   display: inline-flex;
-  gap: 2rem;
-  margin: 0 auto;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem 1rem;
+  flex-wrap: wrap;
   max-width: 64rem;
 }
 .selector-container .selector-item {
@@ -525,6 +528,14 @@ body {
   align-items: center;
   transform: rotate(90deg);
 }
+@media (max-width: 768px) {
+  .scroll-category-wall .wall-scroll-list .left-arrow {
+    display: none;
+  }
+}
+.scroll-category-wall .wall-scroll-list .left-arrow:hover {
+  cursor: pointer;
+}
 .scroll-category-wall .wall-scroll-list .scroll-container {
   overflow: hidden;
 }
@@ -542,6 +553,14 @@ body {
   display: flex;
   align-items: center;
   transform: rotate(270deg);
+}
+@media (max-width: 768px) {
+  .scroll-category-wall .wall-scroll-list .right-arrow {
+    display: none;
+  }
+}
+.scroll-category-wall .wall-scroll-list .right-arrow:hover {
+  cursor: pointer;
 }
 
 /* 隐藏水平滚动条 */
