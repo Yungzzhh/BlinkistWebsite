@@ -1151,6 +1151,9 @@ body {
   box-shadow: 0 1px 2px 0 rgba(38, 34, 32, 0.1);
   animation: slideInFromTop 0.5s ease forwards;
 }
+.header-sticky:hover {
+  cursor: pointer;
+}
 .header-sticky .header__inner {
   padding: 1.3rem 0 1.25rem;
 }
@@ -1469,6 +1472,7 @@ body {
 }
 .trial-button:hover {
   background-color: #20ba68;
+  cursor: pointer;
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./components/Usecases/page.scss ***!

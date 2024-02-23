@@ -9,7 +9,7 @@ export const HeaderSticky = () => {
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 700) {
-                // 当滚动超过200px时，显示动画
+                // 当滚动超过700px时，显示动画
                 setShowAnimation(true);
             } else {
                 setShowAnimation(false);
