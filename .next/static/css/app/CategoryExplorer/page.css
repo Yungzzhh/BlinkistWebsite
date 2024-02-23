@@ -1,0 +1,96 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./app/CategoryExplorer/page.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+body {
+  color: #03314b;
+}
+
+.section-container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .section-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.section-inner {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  width: 100%;
+}
+@media (min-width: 416px) {
+  .section-inner {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section-inner {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+
+.catagory-explorer {
+  background-color: #f1f6f4;
+  padding: 3rem 0;
+}
+@media (min-width: 768px) {
+  .catagory-explorer {
+    padding: 4rem 0;
+  }
+}
+@media (min-width: 1024px) {
+  .catagory-explorer {
+    padding: 4rem 0;
+  }
+}
+
+.header {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+.subheader {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .subheader {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+  }
+}
+
+.line-decoration {
+  display: inline;
+  background: linear-gradient(180deg, transparent 65%, #fedc86 65%);
+  font-weight: bold;
+}
+
+mark {
+  color: inherit;
+}

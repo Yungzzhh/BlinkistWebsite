@@ -1,0 +1,23 @@
+.rotatingItem {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.33;
+    color: #6d787e;
+    @media (min-width: 768px) {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.25;
+        color: #6d787e;
+    }
+    &:not(:last-of-type) {
+        margin-bottom: 0.5rem;
+    }
+    &:last-of-type {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.active {
+    color: #03314b;
+    transition: color .1s ease-out;
+}

@@ -1,0 +1,96 @@
+.catagory-explorer {
+    background-color: #f1f6f4;
+    padding: 3rem 0;
+    @media (min-width: 768px) {
+        padding: 4rem 0;
+    }
+    @media (min-width: 1024px) {
+        padding: 4rem 0;
+    }
+    .header {
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        @media (min-width: 768px) {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+    }
+    .subheader {
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        text-align: center;
+        @media (min-width: 768px) {
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-bottom: 3rem;
+        }
+        .line-decoration {
+            display: inline;
+            background: linear-gradient(180deg, transparent 65%, #fedc86 65%);
+            font-weight: bold;
+        }
+
+        mark {
+            color: inherit;
+        }
+    }
+}
+
+.selector-container {
+    display: inline-flex;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 64rem;
+    .selector-item {
+        padding: 1rem;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 0.25rem;
+        background-color: #fff;
+        &:hover {
+            cursor: pointer;
+            border-color: #2ce080;
+        }
+    }
+}
+
+.scroll-category-wall {
+    .wall-title {
+    }
+    .wall-total {
+    }
+    .wall-scroll-list {
+        max-width: 64rem;
+        display: flex;
+        .left-arrow {
+            padding-right: 1rem;
+            display: flex;
+            align-items: center;
+            transform: rotate(90deg);
+        }
+        .scroll-container {
+            overflow: hidden;
+            .scroll-container__inner {
+                display: flex;
+                gap: 3rem;
+                overflow-x: auto;
+                overflow-y: hidden;
+                .scroll-item {
+                    width: 11rem;
+                }
+            }
+        }
+        .right-arrow {
+            padding-left: 16px;
+            display: flex;
+            align-items: center;
+            transform: rotate(270deg);
+        }
+    }
+}
+
+/* 隐藏水平滚动条 */
+.scroll-container__inner::-webkit-scrollbar {
+    display: none; /* 隐藏滚动条 */
+}
